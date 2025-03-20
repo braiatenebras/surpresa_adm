@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-     <title>TMNC ADM</title>
-     
+    <title>TMNC ADM</title>
 </head>
 <body>
     <header>
         <div class="paraadm">
-            <div class="fire">
-                <div class="flame"></div>
-                <div class="flame" style="animation-delay: 0.1s;"></div>
-                <div class="flame" style="animation-delay: 0.2s;"></div>
-                <div class="flame" style="animation-delay: 0.3s;"></div>
-                <div class="flame" style="animation-delay: 0.4s;"></div>
-            </div>
-            <h1> PAU NO CU DO ADM!!!!! </h1>
+            <h1>Sistema é melhor que ADM</h1>
         </div>
     </header>
-    <button id="startButton">Clique aqui</button>
-    <div id="output"></div>
+    <main>
+        <button id="startButton">Clique aqui</button>
+        <div id="output"></div>
+    </main>
 
     <script>
         document.getElementById('startButton').addEventListener('click', function() {
@@ -31,14 +25,13 @@
 
             const interval = setInterval(function() {
                 if (count <= 1000) {        
-                    outputDiv.innerHTML += `${count}SISTEMA > ADM <br>`;
+                    outputDiv.innerHTML += `${count} ADM LIXO <br>`;
                     count++;
                 } else {
                     clearInterval(interval); // Para a contagem ao chegar a 1000
                 }
-            }, 100); // A cada 1000 milissegundos (1 segundo)
+            }, 100); // A cada 100 milissegundos
         });
     </script>
-    
 </body>
 </html>
